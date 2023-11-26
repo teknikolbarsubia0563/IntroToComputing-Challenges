@@ -1,7 +1,16 @@
 :root{
 --green:#90EE90;
 --darkgreen:#023020; 
---lightgreen:rgba(8, 205, 136, 0.2);
+--dark-moss-green: #606c38ff;
+--pakistan-green: #283618ff;
+--cornsilk: #fefae0ff;
+--earth-yellow: #dda15eff;
+--tigers-eye: #bc6c25ff;
+--caput-mortuum: #522a27ff;
+--burnt-sienna: #ee6c4dff;
+--wisteria: #b4a0e5ff;
+--mountbatten-pink: #a07178ff;
+--oxford-blue: #102542ff;
 }
 
 *{
@@ -29,26 +38,26 @@ section{
 .heading{
     text-align: center;
     font-size: 4rem;
-    color:#333;
+    color:var(--darkgreen);
     padding: 1rem;
     margin: 2rem 0;
-    background: rgba(2, 147, 106, 0.05);
+    background:hsla(52, 94%, 94%, 1);
 }
 .heading span{
-    color:var(--green);
+    color:var(--dark-moss-green);
 }
 .btn{
     display: inline-block;
     margin-top: .5rem;
     border-radius: 20rem;
-    background: #333;
+    background:var(--darkgreen);
     color: #fff;
     padding: 1rem 1rem;
     cursor: pointer;
     font-size: 1.5rem;
 }
 .btn:hover{
-    background: var(--green);
+    background: var(--mountbatten-pink);
 }
 
 header{
@@ -64,27 +73,27 @@ header{
 }
 header .logo{
     font-size: 3rem;
-    color: #333;
+    color: var(--mountbatten-pink);
     font-weight: bolder;
 }
 header .logo span{
-    color:var(--green);
+    color:var(--darkgreen);
 }
 header .navbar a{
     font-size: 2rem;
     padding: 0 1.5rem;
-    color: #666;
+    color:var(--darkgreen);
 }
 header .navbar a:hover{
-    color:var(--green);
+    color:var(--mountbatten-pink);
 }
 header .icons a{
     font-size: 2.5rem;
-    color: #333;
+    color:var(--darkgreen);
     margin-left: 1.5rem;
 }
 header .icons a:hover{
-    color:var(--green);
+    color:var(--dark-moss-green);
 }
 header #toggler{
     display: none;
@@ -92,7 +101,7 @@ header #toggler{
 header .fa-bars{
     font-size: 3rem;
     border-radius: .5rem;
-    color: #333;
+    color:var(--dark-moss-green);
     padding: .5rem 1.5rem;
     cursor: pointer;
     border: .1rem solid rgb(0,0,0,.3);
@@ -103,7 +112,7 @@ header .fa-bars{
     display: flex;
     align-items: center;
     min-height: 100vh;
-    background:url(../LunaTea/images/home-bg.png) no-repeat;
+    background:url(../LunaTea/images/emily-sierra-twin-sisters-tea-8.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -113,18 +122,18 @@ header .fa-bars{
 }
 .Home .content h3 {
     font-size: 3.5rem;
-    color: var(--green);
+    color: var(--earth-yellow);
 
 }
 .Home .content span {
     font-size: 3.5rem;
-    color: var(--darkgreen);
+    color: var(--cornsilk);
     padding: 1 rem 0;
     line-height: 1.5;
 }
 .Home .content p {
     font-size: 1.5rem;
-    color: #999;
+    color: var(--cornsilk);
     padding: 1 rem 0;
     line-height: 1.5;
 }
@@ -153,7 +162,6 @@ header .fa-bars{
     position: absolute;
     top: 50%; transform: translateY(-50%);
     font-size: 3rem;
-    color: #333;
     background: #fff;
     width: 100%;
     padding: 1rem 2rem;
@@ -165,20 +173,46 @@ header .fa-bars{
 }
 .about .row .content h3{
     font-size: 3rem;
-    color:#333;
+    color:var(--caput-mortuum);
 }
 .about .row .content p{
     font-size: 1.5rem;
-    color:#999;
+    color:var(--pakistan-green);
     padding: .5rem 0;
     padding-top: 1rem;
     line-height: 1.5;
 }
 
+.icons-container{
+    background:#eee;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top:5rem;
+    padding-bottom:5rem;
+} 
 
-
-
-
+.icons-container .icons{
+    background:#fff;
+    border: .1rem solid rgba(0,0,0, .1);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex: 1 1 25rem;
+}
+.icons-container .icons img{
+    height: 5rem;
+    margin-right: 2rem;
+}
+.icons-container .icons h3{
+    color:#333;
+    padding-bottom: .5rem;
+    font-size: 1.5rem;
+}
+.icons-container .icons span{
+    color: #555;
+    font-size: 1.3rem;
+}
 
 
 
@@ -217,7 +251,7 @@ section{
     header .navbar{
         position: absolute;
         top: 100%; left: 0; right: 0;
-        background: #eee;
+        background:#fff;
         border-top: .1rem solid rgb(0,0,0,.1);
         clip-path: polygon(0 0, 100% 0, 0 0);
     }
@@ -229,7 +263,7 @@ section{
     header .navbar a{
         margin: 1.5rem;
         padding: 1.5rem;
-        background: #fff;
+        background:#fff;
         border:.1rem solid rgb(0,0,0,.1);
         display: block;
     }
@@ -238,6 +272,12 @@ section{
     }
     .home .content span{
         font-size: 2.5rem;
+    }
+    .icons-container .icons h3{
+        font-size: 2rem;
+    }
+    .icons-container .icons span{
+        font-size: 1.7rem;
     }
 }
 @media (max-width:450px){
