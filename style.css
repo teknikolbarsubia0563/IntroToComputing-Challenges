@@ -494,10 +494,12 @@ header .fa-bars {
       background: #fff;
       border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
       clip-path: polygon(0 0, 100% 0, 0 0);
+      display: none;
     }
   
     header #toggler:checked ~ .navbar {
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+      display: block;
     }
   
     header .navbar a {
